@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: 20px;
+    background-color: #F8F1E5;
+    color: #2c2c2c;
+}
+
+
+h1, h2, h3{
+    font-family: 'Merriweather';
+    color: #8B0000;
+}
+
+
+nav{
+    margin: 10px auto 30px auto;
+    width: min(1100px, 95%);
+}
+
+.ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+nav a:hover{
+    color: #B22222;
+}
+
+
+header, section{
+    margin: 30px auto;
+    width: min(1100px, 95%);
+    padding: 40px;
+    background-color: #F2E2C4;
+    border-radius: 12px;
+}
+
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.flex-container img{
+    max-width: 420px;
+    width: 100%;
+    border-radius: 10px;
+    height: auto; 
+    align-items: center;
+}
+
+
+.text-container{
+    flex: 1;
+}
+
+.text-container p{
+    margin: 15px 0;
+}
+
+.section-estilo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left; /* Alinhado à esquerda em telas grandes */
+}
+
+.section-estilo .text-container {
+    flex: 1;
+}
+
+.section-estilo img {
+    display: block;
+    max-width: 450px; /* Tamanho médio para a foto */
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.section-estilo img:hover{
+    transform: scale(1.03);
+}
+
+
+.botao1, .botao2{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.botao1{
+    background-color: #8B0000;
+    color: white;
+}
+
+.botao2{
+    background-color: #C9A34E;
+    color: white;
+}
+
+
+details{
+    margin-top: 16px;
+    background-color: #E6D3A3;
+    border-radius: 8px;
+}
+
+details summary{
+    padding: 8px;
+    color: #8B0000;
+    cursor: pointer;
+}
+
+details p{
+    padding: 10px;
+}
+
+
+
+iframe{
+    width: 100%;
+    max-width: 650px;
+    aspect-ratio: 16 / 9; 
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1020px){
+    .flex-container, .section-estilo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-container img, .section-estilo img {
+        max-width: 100%; 
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    header, section {
+        padding: 20px; 
+    }
+}
